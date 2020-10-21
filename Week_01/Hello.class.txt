@@ -1,0 +1,160 @@
+Classfile /D:/study/¼«¿ÍJava/0_homework/Week_01/Hello.class
+  Last modified 2020-10-20; size 698 bytes
+  MD5 checksum fb90e6b5618bea16f7e351b1d6347543
+  Compiled from "Hello.java"
+public class Hello
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #12.#23        // java/lang/Object."<init>":()V
+   #2 = Fieldref           #24.#25        // java/lang/System.out:Ljava/io/PrintStream;
+   #3 = String             #26            // Hello, classLoader!
+   #4 = Methodref          #27.#28        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #5 = Long               2l
+   #7 = Class              #29            // java/lang/String
+   #8 = String             #30            // a
+   #9 = String             #31            // b
+  #10 = String             #32            // c
+  #11 = Class              #33            // Hello
+  #12 = Class              #34            // java/lang/Object
+  #13 = Utf8               <init>
+  #14 = Utf8               ()V
+  #15 = Utf8               Code
+  #16 = Utf8               LineNumberTable
+  #17 = Utf8               hello
+  #18 = Utf8               StackMapTable
+  #19 = Class              #33            // Hello
+  #20 = Class              #35            // "[Ljava/lang/String;"
+  #21 = Utf8               SourceFile
+  #22 = Utf8               Hello.java
+  #23 = NameAndType        #13:#14        // "<init>":()V
+  #24 = Class              #36            // java/lang/System
+  #25 = NameAndType        #37:#38        // out:Ljava/io/PrintStream;
+  #26 = Utf8               Hello, classLoader!
+  #27 = Class              #39            // java/io/PrintStream
+  #28 = NameAndType        #40:#41        // println:(Ljava/lang/String;)V
+  #29 = Utf8               java/lang/String
+  #30 = Utf8               a
+  #31 = Utf8               b
+  #32 = Utf8               c
+  #33 = Utf8               Hello
+  #34 = Utf8               java/lang/Object
+  #35 = Utf8               [Ljava/lang/String;
+  #36 = Utf8               java/lang/System
+  #37 = Utf8               out
+  #38 = Utf8               Ljava/io/PrintStream;
+  #39 = Utf8               java/io/PrintStream
+  #40 = Utf8               println
+  #41 = Utf8               (Ljava/lang/String;)V
+{
+  public Hello();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 1: 0
+
+  public void hello();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=4, locals=10, args_size=1
+         0: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #3                  // String Hello, classLoader!
+         5: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: iconst_1
+         9: istore_1
+        10: ldc2_w        #5                  // long 2l
+        13: lstore_2
+        14: iconst_1
+        15: istore        4
+        17: iconst_3
+        18: anewarray     #7                  // class java/lang/String
+        21: dup
+        22: iconst_0
+        23: ldc           #8                  // String a
+        25: aastore
+        26: dup
+        27: iconst_1
+        28: ldc           #9                  // String b
+        30: aastore
+        31: dup
+        32: iconst_2
+        33: ldc           #10                 // String c
+        35: aastore
+        36: astore        5
+        38: iload         4
+        40: ifeq          49
+        43: iinc          1, 1
+        46: iinc          1, 1
+        49: iconst_0
+        50: istore        6
+        52: iload         6
+        54: aload         5
+        56: arraylength
+        57: if_icmpge     77
+        60: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        63: aload         5
+        65: iload         6
+        67: aaload
+        68: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        71: iinc          6, 1
+        74: goto          52
+        77: aload         5
+        79: astore        6
+        81: aload         6
+        83: arraylength
+        84: istore        7
+        86: iconst_0
+        87: istore        8
+        89: iload         8
+        91: iload         7
+        93: if_icmpge     117
+        96: aload         6
+        98: iload         8
+       100: aaload
+       101: astore        9
+       103: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       106: aload         9
+       108: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       111: iinc          8, 1
+       114: goto          89
+       117: return
+      LineNumberTable:
+        line 4: 0
+        line 5: 8
+        line 6: 10
+        line 7: 14
+        line 8: 17
+        line 9: 38
+        line 10: 43
+        line 11: 46
+        line 13: 49
+        line 14: 60
+        line 13: 71
+        line 16: 77
+        line 17: 103
+        line 16: 111
+        line 19: 117
+      StackMapTable: number_of_entries = 5
+        frame_type = 255 /* full_frame */
+          offset_delta = 49
+          locals = [ class Hello, int, long, int, class "[Ljava/lang/String;" ]
+          stack = []
+        frame_type = 252 /* append */
+          offset_delta = 2
+          locals = [ int ]
+        frame_type = 250 /* chop */
+          offset_delta = 24
+        frame_type = 254 /* append */
+          offset_delta = 11
+          locals = [ class "[Ljava/lang/String;", int, int ]
+        frame_type = 248 /* chop */
+          offset_delta = 27
+}
+SourceFile: "Hello.java"
